@@ -12,7 +12,7 @@ from openai import OpenAI
 
 st.set_page_config(
     page_title="Asistente de viajes",
-    page_icon="👩‍✈️🛩️",
+    page_icon="🛩️",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
