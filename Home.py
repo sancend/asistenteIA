@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from openai import OpenAI
 
 #######################################
-# PREREQUISITES
+# PREREQUISITOS
 #######################################
 
 st.set_page_config(
@@ -31,7 +31,7 @@ markers_state = "markers"
 user_msg_input_key = "input_user_msg"
 
 #######################################
-# SESSION STATE SETUP
+# CONFIGURACIÓN DEL ESTADO DE LA SESIÓN
 #######################################
 
 if (assistant_state not in st.session_state) or (thread_state not in st.session_state):
@@ -55,7 +55,7 @@ if markers_state not in st.session_state:
     st.session_state[markers_state] = None
 
 #######################################
-# TOOLS SETUP
+# CONFIGURACIÓN DE HERRAMIENTAS
 #######################################
 
 
@@ -87,7 +87,7 @@ tool_to_function = {
 }
 
 #######################################
-# HELPERS
+# AYUDANTES
 #######################################
 
 
@@ -176,7 +176,7 @@ def on_reset_thread():
 
 
 #######################################
-# SIDEBAR
+# BARRA LATERAL
 #######################################
 
 with st.sidebar:
@@ -186,7 +186,7 @@ with st.sidebar:
     st.button("Reset Thread", on_click=on_reset_thread)
 
 #######################################
-# MAIN
+# PRINCIPAL
 #######################################
 
 st.title("Asistente de viajes")
